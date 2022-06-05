@@ -1,0 +1,288 @@
+:root {
+    --orange: hsl(26, 100%, 55%);
+    --pale-orange: hsl(25, 100%, 94%);
+    --very-vark-blue: hsl(220, 13%, 13%);
+    --dark-grayishblue: hsl(219, 9%, 45%);
+    --grayish-blue: hsl(220, 14%, 75%);
+    --light-grayish-blue: hsl(223, 64%, 98%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    /*  with 75% opacity for lightbox background */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600;700;900&display=swap');
+.container {
+    width: 80%;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+/************* NAVBAR *************************/
+
+.navbar {
+    padding: 0!important;
+}
+
+.navbar .container-fluid {
+    padding-left: 0;
+    margin: 0!important;
+}
+
+.navbar-brand {
+    margin-right: 4rem;
+}
+
+.navbar .nav-item {
+    margin-right: 1rem
+}
+
+nav .nav-link {
+    transition: all 0.5s ease;
+    padding: 3rem;
+    border-bottom: 5px solid white;
+}
+
+nav .nav-link:hover {
+    box-sizing: content-box;
+    border-bottom: 5px solid var(--orange);
+}
+
+nav button {
+    padding: 0;
+    margin: 0;
+    border: none !important;
+    background-color: inherit
+}
+
+.ava {
+    padding: 0;
+    transition: all 0.3s ease;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.ava:hover {
+    border: 3px solid var(--orange);
+}
+
+
+/************* MAİN *************************/
+
+
+/************* MAİN LEFT *************************/
+
+main.row {
+    padding: 1rem;
+}
+
+section.left {
+    padding: 3rem 4rem;
+}
+
+section.left .img-fluid {
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+.img-thumbnail {
+    padding: 0;
+    transition: all 0.3s ease;
+    border: 4px solid white;
+    border-radius: 15px;
+}
+
+.img-thumbnail:hover {
+    opacity: .3;
+    border: 4px solid var(--orange);
+}
+
+section.left a {
+    padding: 0;
+}
+
+
+/************* MAİN RİGHT *************************/
+
+section.right {
+    padding: 3rem 4rem;
+}
+
+section.right h5 {
+    font-weight: bold;
+    color: var(--orange);
+    margin-top: 3rem;
+}
+
+section.right h1 {
+    font-weight: 700;
+    margin-bottom: 2rem;
+    ;
+}
+.min-plus button {
+    z-index: 1;
+}
+.mostten-div {
+    position: relative;
+}
+.mostten {
+    position: absolute;
+   padding:1rem;
+    text-align: center;
+ 
+    border-radius: 8px;
+    box-shadow: 0px 12px 40px 1px rgba(105, 105, 105, 0.46);
+    background-color: #fff;
+    transform: translate(-20%, 10%);
+    display:none;
+
+}
+
+
+/************* JS *************************/
+
+.cost {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.cost .discount {
+    background-color: var(--pale-orange);
+    color: var(--orange);
+    font-size: 1.2rem;
+    padding: 5px;
+    margin-left: 1rem;
+    border-radius: 5px;
+}
+
+.old-price {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--grayish-blue);
+    text-decoration: line-through;
+}
+
+.min-plus {
+    background-color: var(--light-grayish-blue);
+    display: inline-block;
+    padding: 8px;
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+.min-plus img {
+    background-color: inherit;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    padding:8px;
+    
+}
+
+.add-cart {
+    display: inline-block;
+    color: var(--white);
+    background-color: var(--orange);
+    padding: 15px 3rem;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.add-cart:active {
+    transform: scale(0.99)
+}
+
+.add-cart:hover {
+    opacity: .7;
+}
+
+.add-cart i {
+    margin-right: 10px;
+}
+
+.minus:active,
+.plus:active {
+    transform: scale(0.9)
+}
+
+.quantity {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 4px 20px;
+    display: inline-block;
+}
+
+/************* BASKET *************************/
+.cart-div {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.5s linear;
+     
+}
+
+.basket {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0px 12px 40px 1px rgba(105, 105, 105, 0.46);
+    background-color: #fff;
+    transform: translate(-50%, 5%);
+    visibility:hidden;
+   
+}
+
+.basket h5 {
+    text-align: start;
+    padding: 1.3rem;
+    color: black;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.cart-div-content {
+    text-align: start;
+    padding: 1.4rem;
+}
+
+.cart-div-content img {
+    width: 50px;
+    border-radius: 5px;
+}
+
+.basket-img-kutu {
+    width: 50px;
+    height: 50px;
+}
+
+.checkout {
+    cursor: pointer;
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 0 1.4rem;
+}
+
+.checkout:active {
+    transform: scale(0.99)
+}
+.box-content {
+    display:none;
+}
+.empty {
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--dark-grayishblue);
+    margin-top: 3rem;
+    display:none
+}
+
+
+/************* NAVBAR *************************/
