@@ -281,7 +281,19 @@ section.right h1 {
     font-size: 1.2em;
     color: var(--dark-grayishblue);
     margin-top: 3rem;
-    display:none
+    display:block
+}
+.top-quantity {
+    position: absolute;
+    transform: translate(15px, -50px);
+    width:22px;
+    height: 17px;
+    color: var(--white);
+    background-color: var(--orange);
+    text-align: center;
+    border-radius: 8px;
+    font-size: 13px;
+    display:none;
 }
 
 
