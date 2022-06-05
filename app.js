@@ -87,13 +87,14 @@ product.addEventListener('click', (event) => {
 
 
         }
+        document.querySelector('.total-product').innerText = event.target.previousElementSibling.previousElementSibling.firstElementChild.nextElementSibling.innerText * 125;
+        document.querySelector('.top-quantity').innerText = event.target.previousElementSibling.previousElementSibling.firstElementChild.nextElementSibling.innerText;
         if(event.target.previousElementSibling.previousElementSibling.firstElementChild.nextElementSibling.innerText==0){
             document.querySelector('.box-content').style.display='none';
-            document.querySelector('.empty').style.display ='block'
+            document.querySelector('.empty').style.display ='block';
+            document.querySelector('.top-quantity').style.display='none';
         }
         
-       document.querySelector('.total-product').innerText = event.target.previousElementSibling.previousElementSibling.firstElementChild.nextElementSibling.innerText * 125;
-       document.querySelector('.top-quantity').innerText = event.target.previousElementSibling.previousElementSibling.firstElementChild.nextElementSibling.innerText;
     }
 
 
