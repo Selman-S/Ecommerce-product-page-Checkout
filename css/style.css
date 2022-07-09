@@ -29,7 +29,11 @@
 }
 
 .navbar-brand {
-    margin-right: 4rem;
+    margin-right: 2.5rem;
+   
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .navbar .nav-item {
@@ -64,10 +68,12 @@ nav button {
 .ava:hover {
     border: 3px solid var(--orange);
 }
+#navbarSupportedContent {
+ 
+}
 
 
 /************* MAİN *************************/
-
 
 /************* MAİN LEFT *************************/
 
@@ -297,4 +303,36 @@ section.right h1 {
 }
 
 
-/************* NAVBAR *************************/
+/************* MEDİA *************************/
+
+@media (max-width: 991px) {
+    .main {
+        display: block; 
+     }
+        
+    nav .nav-link {
+        transition: all 0.5s ease;
+        padding: 0.3rem;
+        border-bottom: 5px solid white;
+    
+    }
+     
+}
+@media (max-width: 768px) {
+    
+main.row {
+    padding: 0;
+    
+}
+
+section.left {
+    padding: 0;
+    
+}
+section.right {
+    padding: 0;
+}
+
+
+  
+}
