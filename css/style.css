@@ -341,4 +341,10 @@ section.right {
         width: 100%;
         
     }
+    section.right {
+        padding: 0;
+        width:80%;
+        margin-left: 10%;
+     
+    }
 }
